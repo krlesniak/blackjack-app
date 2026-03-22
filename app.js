@@ -55,6 +55,9 @@ function newRound() {
     nextBtn.style.display = "none"
     newCardBtn.style.display = "none" 
     stayBtn.style.display = "none"
+
+    document.getElementById("player-score-val").textContent = "";
+    document.getElementById("dealer-score-val").textContent = "";
 }
 
 function startGame() {
@@ -92,6 +95,8 @@ function addCardToPlayer() {
     let card = getNextCard()
     cards.push(card)
     sum = calculateSum(cards) 
+
+    document.getElementById("player-score-val").textContent = "Sum: " + getScoreText(cards);
     
     displayNewCard(card, cardsEl, false)
 }
@@ -134,6 +139,8 @@ function dealerTurnAnimated() {
         dealerSum = calculateSum(dealerCards)
 
         displayNewCard(card, dealerCardsEl, true)
+
+        document.getElementById("dealer-score-val").textContent = "Sum: " + getScoreText(dealerCards);
         
         setTimeout(dealerTurnAnimated, 1200)
     } else {
@@ -203,4 +210,27 @@ function calculateSum(hand) {
     }
 
     return tempSum
+}
+
+function getScoreText(hand) {
+    let baseSum = 0; 
+    let hasAce = false;
+
+    for (let card of hand) {
+        if (card.name === "A") {
+            hasAce = true;
+            baseSum += 1;
+        } else {
+            baseSum += card.value;
+        }
+    }
+
+    if (!hasAce) return baseSum;
+
+    let softSum = baseSum + 10;
+    if (softSum <= 21) {
+        return `${baseSum} / ${softSum}`;
+    } else {
+        return baseSum;
+    }
 }

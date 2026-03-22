@@ -30,7 +30,18 @@
     letter-spacing: 6px; 
     text-shadow: 0 0 20px rgba(254, 183, 4, 0.816); 
     padding-bottom: 5px;
-    margin-top: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#player-score-val, #dealer-score-val {
+    color: #f2f1ed;
+    font-size: 20px; 
+    text-transform: uppercase;
+    letter-spacing: 6px; 
+    text-shadow: 0 0 20px rgba(254, 183, 4, 0.816); 
+    padding-bottom: 5px;
+    margin-top: 20px;
     cursor: pointer;
 }
 
