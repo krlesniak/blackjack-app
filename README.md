@@ -1,18 +1,18 @@
 # Blackjack Pro - Digital Casino Experience
 
-A fully functional and interactive **Blackjack** game built with JavaScript, HTML5, and CSS. This project simulates a real casino environment with advanced deck logic, betting systems, and smooth animations.
+A fully functional and interactive **Blackjack** game built with JavaScript, HTML and CSS. This project simulates a blackjack casino game deck logic, betting systems, and smooth animations.
 
 ## Live Demo
 > **Note to user:** Anybody can enter my blackjack app using this link:
 > [Play Blackjack Pro here](https://krlesniak.github.io/blackjack/)
 
 ## Key Features
-* **Realistic Deck Logic:** Uses a 52-card deck system. Once a card is drawn, it’s removed from the deck for the remainder of the round.
-* **Smart Ace Logic:** Aces automatically switch value between 11 and 1 to prevent the player or dealer from "busting" (going over 21).
+* **Realistic Deck Logic:** Uses a 52-card deck system.
+* **Smart Ace Logic:** Aces automatically switch value between 11 and 1 
 * **Advanced Dealer AI:** The dealer follows classic casino rules, hitting until they reach at least 17 points.
-* **Dynamic Betting System:** Players start with $1000 and can place bets using various chip denominations (10, 50, 100, 200).
-* **Smooth Animations:** Cards "fly" from the center deck to the player or dealer with custom CSS keyframe animations.
-* **Responsive UI:** Interactive card hover effects and a clean, casino-themed layout.
+* **Dynamic Betting System:** Players start with $1000 
+* **Smooth Animations:** Cards fly from the center deck to the player or dealer 
+* **Responsive UI:** Interactive card hover effects.
 
 ## Built With
 * **HTML** - Structure and semantic elements.
