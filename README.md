@@ -3,7 +3,7 @@
 A fully functional and interactive **Blackjack** game built with JavaScript, HTML and CSS. This project simulates a blackjack casino game deck logic, betting systems, and smooth animations.
 
 ## Live Demo
-> **Note to user:** Anybody can enter my blackjack app using this link:
+> Anybody can enter my blackjack app using this link:
 > [Play Blackjack Pro here](https://krlesniak.github.io/blackjack/)
 
 ## Key Features
