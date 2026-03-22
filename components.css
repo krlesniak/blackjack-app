@@ -1,0 +1,235 @@
+
+#back-card {
+    background-image: url("images/back.png");
+    
+    width: 140px; 
+    height: 200px;
+    
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; 
+    border: 2px solid #ccc; 
+    
+    box-shadow: 
+        2px 2px 0px #888,
+        4px 4px 0px #666,
+        6px 6px 15px rgba(0,0,0,0.5); 
+        
+    transition: transform 0.2s; 
+}
+
+#back-card:hover {
+    transform: scale(1.05) rotate(-2deg); 
+    cursor: pointer;
+}
+
+#player-el{
+    color: #f2f1ed;
+    font-size: 20px; 
+    text-transform: uppercase;
+    letter-spacing: 6px; 
+    text-shadow: 0 0 20px rgba(254, 183, 4, 0.816); 
+    padding-bottom: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#message-el {
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+
+.win-style { 
+    color: #39ea3f; 
+    font-size: 45px;
+    text-shadow: 0 0 10px rgba(16, 16, 16, 0.986); 
+}
+.win-style:hover { 
+    color: rgb(18, 143, 18); 
+    font-size: 45px;
+    text-shadow: 0 0 10px rgba(16, 16, 16, 0.986); 
+}
+
+.lose-style { 
+    color: #d53b30; 
+    font-size: 45px;
+    text-shadow: 0 0 10px rgba(2, 2, 2, 0.941)
+ }
+.lose-style:hover { 
+    color: #932d26; 
+    font-size: 45px;
+    text-shadow: 0 0 10px rgba(2, 2, 2, 0.941)
+ }
+
+.draw-style { 
+    color: #ece5a3; 
+    font-size: 45px;    
+    text-shadow: 0 0 10px rgba(2, 2, 2, 0.941)
+}
+.draw-style:hover { 
+    color: #978a1a; 
+    font-size: 45px;    
+    text-shadow: 0 0 10px rgba(2, 2, 2, 0.941)
+}
+
+#cards-el, #dealer-cards-el {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    min-height: 120px;
+}
+
+.card {
+    width: 120px;
+    height: 180px;
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    font-family: Arial, sans-serif;
+    transition: transform 0.2s ease; 
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.05) !important; 
+    z-index: 100; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.card.red { color: #e41313; }
+.card.black { color: #1a1a1a; }
+
+.card-value {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-suit { 
+    font-size: 20px; 
+}
+.card-suit.bottom {
+    transform: rotate(180deg); 
+}
+
+@keyframes dealToPlayer {
+    from {
+        opacity: 0;
+        transform: translateX(400px) rotate(20deg) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) rotate(0) scale(1);
+    }
+}
+
+@keyframes dealToDealer {
+    from {
+        opacity: 0;
+        transform: translateX(-400px) rotate(-20deg) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) rotate(0) scale(1);
+    }
+}
+
+.dealer-anim {
+    animation: dealToDealer 0.5s ease-out forwards;
+}
+
+.player-anim {
+    animation: dealToPlayer 0.5s ease-out forwards;
+}
+
+#chip-btn-10 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    border: 4px dashed white; 
+    background-color: #2e7d32; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#chip-btn-10:hover {
+    transform: scale(1.1);
+    background-color: #1b5e20;
+}
+
+#chip-btn-50 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    border: 4px dashed white; 
+    background-color: #1b03ee; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#chip-btn-50:hover {
+    transform: scale(1.1);
+    background-color: #2516af;
+}
+
+#chip-btn-100 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    border: 4px dashed white; 
+    background-color: #ed0505; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#chip-btn-100:hover {
+    transform: scale(1.1);
+    background-color: #950a0a;
+}
+
+#chip-btn-200 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    border: 4px dashed white; 
+    background-color: #e3ca0c; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#chip-btn-200:hover {
+    transform: scale(1.1);
+    background-color: #9f8e0b;
+}
+
+#bet-el {
+    font-size: 24px; 
+    text-transform: uppercase;
+    letter-spacing: 6px; 
+    text-shadow: 0 0 10px rgba(149, 110, 11, 0.816); 
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    color: goldenrod;
+    cursor: pointer;
+}
+
+#bet-el:hover{
+    color: rgb(181, 132, 8);
+}

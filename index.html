@@ -1,0 +1,54 @@
+
+<head>
+    <title>Blackjack Pro</title>
+    <link rel="stylesheet" href="base.css">
+    
+    <link rel="stylesheet" href="layout.css">
+    
+    <link rel="stylesheet" href="components.css">
+</head>
+<body>
+    <h1>Blackjack</h1>
+    <h3 id="message-el">Want to play a round?</h3>
+
+    <div class="game-board">
+        <div class="player-section">
+            <h2>YOU</h2>
+            <p id="cards-el"></p>
+            <p id="player-el"></p> 
+        </div>
+
+        <div class="deck-section">
+            <div id="back-card"></div>
+        </div>
+
+        <div class="dealer-section">
+            <h2>DEALER</h2>
+            <p id="dealer-cards-el"></p>
+        </div>
+    </div>
+
+    <div class="betting-section">
+        <p id="bet-el">Current Bet: $0</p>
+        <div class="chips-container">
+            <button id="chip-btn-10" onclick="addBet(10)">10</button>
+            <button id="chip-btn-50" onclick="addBet(50)">50</button>
+            <button id="chip-btn-100" onclick="addBet(100)">100</button>
+            <button id="chip-btn-200" onclick="addBet(200)">200</button>
+            <button id="reset-bet-btn" onclick="resetBet()">Clear Bet</button>
+            <button id="next-btn" style="display: none;" onclick="newRound()">New Round</button>
+            <button id="reset-btn" onclick="startNewGame()">Reset Game</button>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button id="start-btn" onclick="confirmBetAndStart()">DEAL CARDS</button>
+        <button id="new-card-btn" style="display: none;" onclick="newCard()">NEW CARD</button>
+        <button id="stay-btn" style="display: none;" onclick="stay()">STAY</button>
+    </div>
+
+    <script src="deck.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

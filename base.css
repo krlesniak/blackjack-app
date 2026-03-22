@@ -1,0 +1,116 @@
+body {
+    background-image: url("images/table.png");
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    
+}
+
+h1 {
+    color: goldenrod;
+    letter-spacing: 6px; 
+    font-size: 85px;
+    border-bottom: 3px solid goldenrod; 
+    display: inline-block; 
+    text-shadow: 0 20px 20px rgba(44, 32, 2, 0.816); 
+    cursor: pointer;
+}
+
+h1:hover{
+    color: rgb(174, 129, 14);
+    text-shadow: 0 20px 20px rgba(44, 32, 2, 0.816); 
+    border-bottom: 3px solid rgb(174, 129, 14); 
+}
+
+h2 {
+    color: #f2f1ed;
+    font-size: 50px; 
+    text-transform: uppercase;
+    letter-spacing: 6px; 
+    text-shadow: 0 0 20px rgba(254, 183, 4, 0.816); 
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+h3 {
+    color: #f2f1ed;
+    font-size: 35px; 
+    text-transform: uppercase;
+    letter-spacing: 6px; 
+    text-shadow: 0 0 20px rgba(75, 74, 71, 0.816); 
+    padding-bottom: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+p {
+    color: #f2f1ed;
+    font-size: 25px; 
+    text-transform: uppercase;
+    letter-spacing: 3px; 
+    text-shadow: 0 0 5px rgba(105, 104, 101, 0.816); 
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    color: rgb(99, 73, 6);
+    width: 300px;
+    background: goldenrod;
+    font-weight: bold;
+    font-size: 20px;
+    border: solid rgb(95, 72, 14);
+    border-radius: 15px;
+    height: 70px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+
+#reset-bet-btn, #next-btn, #reset-btn {
+    color: #f2f0ec;
+    width: 140px; 
+    background: rgba(0, 0, 0, 0.4); 
+    border: 2px solid goldenrod;
+    border-radius: 18px;
+    margin-left: 10px;
+    height: 50px; 
+}
+
+#reset-bet-btn:hover, #next-btn:hover, #reset-btn:hover{
+    color: rgb(154, 152, 147);;
+    transform: scale(1.05);
+    background-color: #215c24;
+}
+
+#ingame-btns {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#ingame-btns:hover {
+    transform: scale(1.05);
+}
+
+#new-card-btn, #stay-btn, #start-btn {
+    color: rgb(99, 73, 6);
+    width: 280px;
+    background: goldenrod;
+    font-weight: bold;
+    font-size: 20px;
+    border: solid rgb(95, 72, 14);
+    border-radius: 15px;
+    height: 70px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#new-card-btn:hover, #stay-btn:hover, #start-btn:hover {
+    background: rgb(168, 127, 22);
+    transform: scale(1.05);
+}
