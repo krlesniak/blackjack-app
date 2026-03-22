@@ -4,7 +4,7 @@ A fully functional and interactive **Blackjack** game built with JavaScript, HTM
 
 ## Live Demo
 > Anybody can enter my blackjack app using this link:
-> [Play Blackjack Pro here](https://krlesniak.github.io/blackjack/)
+> [Play Blackjack Pro here](https://krlesniak.github.io/blackjack-app/)
 
 ## Key Features
 * **Realistic Deck Logic:** Uses a 52-card deck system.
