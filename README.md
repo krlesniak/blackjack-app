@@ -3,8 +3,8 @@
 A fully functional and interactive **Blackjack** game built with JavaScript, HTML5, and CSS. This project simulates a real casino environment with advanced deck logic, betting systems, and smooth animations.
 
 ## Live Demo
-> **Note to user:** If you host this on GitHub Pages (instructions below), paste your link here!
-> Example: [Play Blackjack Pro here](https://yourusername.github.io/blackjack-pro/)
+> **Note to user:** Anybody can enter my blackjack app using this link:
+> Example: [Play Blackjack Pro here](https://krlesniak.github.io/blackjack/)
 
 ## Key Features
 * **Realistic Deck Logic:** Uses a 52-card deck system. Once a card is drawn, it’s removed from the deck for the remainder of the round.
@@ -30,16 +30,6 @@ To see the game in action on your computer, follow these steps:
 4.  Select **"Open with Live Server"**. 
 5.  A new tab will automatically open in your browser showing the game.
 
-## How to Share with Others (The Best Way)
-
-The easiest way to let others play your game without them having to download anything is using **GitHub Pages**:
-
-1.  Push your code to a **GitHub repository**.
-2.  Go to the **Settings** tab of your repository.
-3.  On the left sidebar, click **Pages**.
-4.  Under "Build and deployment", set the source to **"Deploy from a branch"**.
-5.  Select the **main** (or master) branch and click **Save**.
-6.  Wait about 1-2 minutes, and GitHub will provide you with a public URL where anyone can play your game!
 
 ## Project Structure
 ```text

@@ -10,12 +10,12 @@
     padding: 20px;
     border-radius: 15px;
     border: 2px solid goldenrod;
-    min-width: 500px;
-    height: 500px;
+    min-width: 45vh;
+    height: 45vh;
 }
 
 .deck-section {
-    width: 400px; 
+    width: 35vh; 
     display: flex;
     justify-content: center; 
     align-items: center; 
